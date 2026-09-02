@@ -1,0 +1,45 @@
+name: História de usuário
+description: Proponha uma entrega de valor para a pessoa usuária.
+title: "[HISTÓRIA] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: historia
+    attributes:
+      label: História
+      placeholder: Como [perfil], quero [objetivo] para [benefício].
+    validations:
+      required: true
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto e valor
+      description: Explique o problema e por que vale resolvê-lo.
+    validations:
+      required: true
+  - type: textarea
+    id: aceite
+    attributes:
+      label: Critérios de aceite
+      placeholder: |-
+        - [ ] Dado ..., quando ..., então ...
+        - [ ] Dado ..., quando ..., então ...
+    validations:
+      required: true
+  - type: textarea
+    id: dependencias
+    attributes:
+      label: Dependências e observações
+      description: Vincule outras Issues, decisões, telas ou documentos.
+  - type: input
+    id: estimativa
+    attributes:
+      label: Estimativa sugerida
+      description: Pontos Fibonacci; a equipe confirma no Planning Poker.
+      placeholder: "Ex.: 5"
+  - type: input
+    id: milestone
+    attributes:
+      label: Iteração / Milestone
+      placeholder: "Ex.: Iteração 1 — Planejamento e MVP"
