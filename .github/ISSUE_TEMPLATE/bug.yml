@@ -1,0 +1,55 @@
+name: Relato de bug
+description: Registre um comportamento incorreto e como reproduzi-lo.
+title: "[BUG] "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: resumo
+    attributes:
+      label: Resumo e impacto
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |-
+        1. Acesse ...
+        2. Preencha ...
+        3. Clique em ...
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: atual
+    attributes:
+      label: Resultado atual e evidências
+      description: Inclua mensagens, logs ou capturas sem dados sensíveis.
+    validations:
+      required: true
+  - type: dropdown
+    id: impacto
+    attributes:
+      label: Impacto
+      options:
+        - Bloqueia demonstração ou uso principal
+        - Afeta funcionalidade, mas existe contorno
+        - Impacto baixo ou visual
+    validations:
+      required: true
+  - type: input
+    id: ambiente
+    attributes:
+      label: Ambiente
+      placeholder: "Ex.: develop, Docker, Chrome"
+  - type: input
+    id: milestone
+    attributes:
+      label: Iteração / Milestone
+      placeholder: "Ex.: Iteração 2 — Evolução e qualidade"
