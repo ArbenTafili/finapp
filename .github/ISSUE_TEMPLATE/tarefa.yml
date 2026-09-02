@@ -1,0 +1,46 @@
+name: Tarefa técnica, documental ou de gestão
+description: Registre trabalho que não é uma história de usuário.
+title: "[TAREFA] "
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo
+      options:
+        - Técnica
+        - Documentação
+        - Gestão
+        - Apresentação
+        - Pesquisa
+    validations:
+      required: true
+  - type: textarea
+    id: objetivo
+    attributes:
+      label: Objetivo
+      description: Descreva o resultado esperado, não apenas a atividade.
+    validations:
+      required: true
+  - type: textarea
+    id: conclusao
+    attributes:
+      label: Critérios de conclusão
+      placeholder: |-
+        - [ ] Resultado revisado
+        - [ ] Documento ou teste atualizado
+    validations:
+      required: true
+  - type: textarea
+    id: dependencias
+    attributes:
+      label: Dependências e observações
+  - type: input
+    id: estimativa
+    attributes:
+      label: Estimativa sugerida
+      placeholder: "Ex.: 3 pontos"
+  - type: input
+    id: milestone
+    attributes:
+      label: Iteração / Milestone
+      placeholder: "Ex.: Iteração 1 — Planejamento e MVP"
